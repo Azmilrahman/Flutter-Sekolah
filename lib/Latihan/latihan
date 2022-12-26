@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+
+class LatihanPage extends StatelessWidget {
+   LatihanPage({Key? key}) : super(key: key);
+
+  @override
+  LatihanState createState() => _LatihanSate();
+
+  class _LatihanSate extends StateLatihanPage>
+
+void main() {
+  runApp(MaterialApp());
+}
+
+class  extends StatelessWidget {
+  // const MyApp({Key? key}) : super(key: key);
+
+    @override
+  Widget build(BuildContext context) {
+    // const Color darkBlue = Color.fromARGB(255, 204, 41, 30);
+    return MaterialApp(
+      // theme: ThemeData.dark(),
+      title: "Belajar Flutter",
+      // debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Dynamic Apps"),
+        ),
+        body: Column(
+          children: [
+            Text("1"),
+            Row(children: [
+             RaisedButton(onPressed: null, child: Icon(Icon.add),),
+              RaisedButton(onPressed: null, child: Icon(Icon.remove),),
+            ],  
+            ),
+          ],
+        ),
+        // body: const Center(y
+        //   child: Text(
+        //     "Hello Flutter",
+        //     style: TextStyle(fontSize: 32, fontStyle: FontStyle.italic),
+        //   ),
+        // ),
+      ),
+    );
+  }
+}
